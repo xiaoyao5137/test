@@ -58,6 +58,7 @@
     "antd": "4.16.13",
     "classnames": "^2.2.6",
     "insert-css": "^2.0.0",
+    "less-loader": "^4.1.0",
     "lodash": "^4.17.11",
     "moment": "^2.25.3",
     "omit.js": "^2.0.2",
@@ -67,7 +68,7 @@
     "react-dev-inspector": "^1.1.1",
     "react-dom": "^17.0.0",
     "react-helmet-async": "^1.0.4",
-    "umi": "^3.5.0",
+    "umi": "3.5.0",
     "umi-serve": "^1.9.10"
   },
   "devDependencies": {
