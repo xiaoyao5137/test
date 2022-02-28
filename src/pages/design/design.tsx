@@ -413,7 +413,7 @@ const Design: React.FC = () => {
     });
     const r2 = graph.createNode({
       shape: 'custom-rect',
-      label: '过程',
+      label: 'L2模块',
     });
     const r3 = graph.createNode({
       shape: 'custom-rect',
@@ -423,7 +423,7 @@ const Design: React.FC = () => {
           ry: 6,
         },
       },
-      label: '可选过程',
+      label: 'L3模块',
     });
     const r4 = graph.createNode({
       shape: 'custom-polygon',
@@ -486,6 +486,22 @@ const Design: React.FC = () => {
         },
       }),
     );
+
+    graph.on('cell:dblclick', ({ cell, e }) => {
+      const isNode = cell.isNode();
+      const name = cell.isNode() ? 'node-editor' : 'edge-editor';
+      cell.removeTool(name);
+      cell.addTools({
+        name,
+        args: {
+          event: e,
+          attrs: {
+            backgroundColor: isNode ? '#EFF4FF' : '#FFF',
+          },
+        },
+      });
+    });
+
     stencil.load(imageNodes, 'group2');
     // #endregion
 
