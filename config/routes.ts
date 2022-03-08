@@ -23,6 +23,7 @@
     name: 'welcome',
     icon: 'smile',
     component: './Welcome',
+    // layout: false,
   },
   {
     path: '/admin',
@@ -43,16 +44,13 @@
     ],
   },
   {
-    name: 'list.table-list',
-    icon: 'table',
+    // name: 'list.table-list',
+    // icon: 'table',
     path: '/list',
     component: './TableList',
-  },
-  {
-    name: 'list.design',
-    icon: 'table',
-    path: '/design',
-    component: './design/design',
+    headerRender: false,
+    menuHeaderRender: false,
+    // layout: false,
   },
   {
     path: '/',
@@ -61,4 +59,8 @@
   {
     component: './404',
   },
+  // {
+  //   path: './index2',
+  // component: '/docs/index2',
+  // },
 ];

@@ -13,7 +13,6 @@ const Admin: React.FC = () => {
         defaultMessage: 'This page can only be viewed by admin',
       })}
     >
-      xianjiaqi test
       <Card>
         <Alert
           message={intl.formatMessage({

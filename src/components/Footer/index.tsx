@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
   const intl = useIntl();
   const defaultMessage = intl.formatMessage({
     id: 'app.copyright.produced',
-    defaultMessage: '蚂蚁集团体验技术部出品',
+    defaultMessage: '否得技术中心出品',
   });
 
   const currentYear = new Date().getFullYear();
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       links={[
         {
           key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
+          title: '设计中心',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
         },
         {
           key: 'Ant Design',
-          title: 'Ant Design',
+          title: '设计资源',
           href: 'https://ant.design',
           blankTarget: true,
         },
